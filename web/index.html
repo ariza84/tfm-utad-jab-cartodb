@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+    <head>
+        <title>Wearable Technology</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=9" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+        <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+        <!--[if lte IE 8]>
+        <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v2/themes/css/cartodb.ie.css" />
+        <![endif]-->
+        <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" />
+        <script src="//code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/wearables.js"></script>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="menubar">
+                <ul id="menu">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li class="current"><a href="encuestas.html">Encuestas</a></li>
+                    <li class="current"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div id="site_content">
+                <div class="sidebar_container">       
+                    <div class="sidebar">
+                        <div class="sidebar_item">
+                            <h2>Wearable Technology</h2>
+                            <form>
+                                <select id="userstr" name="userstr" class="select">
+                                </select>
+                                <div>
+                                    <img src="images/calendar.png" class="img-tfm" />
+                                    <input type="text" id="from" name="from" class="input-tfm" />
+                                </div>
+                                <div>
+                                    <img src="images/calendar.png" class="img-tfm" />
+                                    <input type="text" id="to" name="to" class="input-tfm" />
+                                </div>
+                                <select id="zone" name="zone" class="select">
+                                </select>
+                                <div style="float: right;margin-top: 10px">
+                                    <input type="button" value="Limpiar" class="paging" onclick="this.form.reset()" />
+                                    <input id="buscar" type="button" value="Buscar" class="paging" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <div class="sidebar_item">
+                            <h2>Top 10 más "movidos"</h2>
+                            <div id="list_users" style="padding-top: 5px">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <div class="sidebar_item">
+                            <h2>Últimas actualizaciones</h2>
+                            <h3>Diciembre 2014</h3>
+                            <p>Diseño y desarrollo de un pequeño dashboard para poder visualizar la información recogida por nuestro sistema y analizar algunos comportamientos de los usuarios</p>         
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <div class="sidebar_item">
+                            <h3>Noviembre 2014</h3>
+                            <p>Integración de algunas herramientas utilizadas en el desarrollo como Apache Kafka, Apache Cassandra, Vertica, Apache Hadoop...</p>         
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <div class="sidebar_item">
+                            <h3>Octubre 2014</h3>
+                            <p>Arranque del proyecto de monitorización de dispositivos "Wearable Technology". Definición de una arquitectura, toma de requisitos...</p>         
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slideshow" id="map"></div>
+
+                <div id="content">
+                    <div class="content_item">
+                        <h1>"Wearable Technology"</h1>
+                        <p>La tecnología ponible es el término que describe a aquellas prendas de vestir, y complementos, que incorporan elementos tecnológicos, electrónicos, etc.</p>
+                        <p>Este mapa representa los recorridos que han realizado una serie de usuarios que tienen dispositivos de tracking personal(relojes, pulseras, gafas...) dentro de la Comunidad de Madrid.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <a>Valid XHTML</a> | <a>Images</a> | <a>Virtual Server</a> | by <a>Javier Ariza</a>
+        </div>
+    </body>
+</html>

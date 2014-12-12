@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+    <head>
+        <title>Wearable Technology</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=9" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+        <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+        <!--[if lte IE 8]>
+        <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v2/themes/css/cartodb.ie.css" />
+        <![endif]-->
+        <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" />
+        <script src="//code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/encuestas.js"></script>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="menubar">
+                <ul id="menu">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li class="current"><a href="encuestas.html">Encuestas</a></li>
+                    <li class="current"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div id="site_content">
+                <div class="sidebar_container">       
+                    <div class="sidebar">
+                        <div class="sidebar_item">
+                            <h2>Preguntas frequentes</h2>
+                            <form>
+                                <ul class="checkbox_questions">
+                                    <li>
+                                        <input type="checkbox" id="p1" name="quest" value="1" />
+                                        <label for="p1">¿Qué zonas son las que pisan los deportistas que juegan al baloncesto?</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="p2" name="quest" value="2" />
+                                        <label for="p2">¿Qué zonas son las que pisan los deportistas que juegan al fútbol?</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="p3" name="quest" value="3" />
+                                        <label for="p3">¿Qué zonas son las que prefieren los alcohólicos?</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="p4" name="quest" value="4" />
+                                        <label for="p4">¿Qué zonas son las que prefieren las personas que leen?</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="p5" name="quest" value="5" />
+                                        <label for="p5">¿Qué zonas son las que prefieren las personas que ven la TV?</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="p6" name="quest" value="6" />
+                                        <label for="p6">¿Qué zonas son las que prefieren las personas que escuchan la radio?</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="p7" name="quest" value="7" />
+                                        <label for="p7">¿Qué zonas son las que prefieren las personas que les gusta el Hip Hop?</label>
+                                    </li>
+                                </ul>
+                                <div style="float: right;margin-top: 10px">
+                                    <input type="button" value="Limpiar" class="paging" onclick="this.form.reset()" />
+                                    <input id="buscar" type="button" value="Buscar" class="paging" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <div class="sidebar_item">
+                            <h2>Últimas actualizaciones</h2>
+                            <h3>Diciembre 2014</h3>
+                            <p>Diseño y desarrollo de un pequeño dashboard para poder visualizar la información recogida por nuestro sistema y analizar algunos comportamientos de los usuarios</p>         
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <div class="sidebar_item">
+                            <h3>Noviembre 2014</h3>
+                            <p>Integración de algunas herramientas utilizadas en el desarrollo como Apache Kafka, Apache Cassandra, Vertica, Apache Hadoop...</p>         
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <div class="sidebar_item">
+                            <h3>Octubre 2014</h3>
+                            <p>Arranque del proyecto de monitorización de dispositivos "Wearable Technology". Definición de una arquitectura, toma de requisitos...</p>         
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slideshow" id="map"></div>
+
+                <div id="content">
+                    <div class="content_item">
+                        <h1>"Wearable Technology"</h1>
+                        <p>La tecnología ponible es el término que describe a aquellas prendas de vestir, y complementos, que incorporan elementos tecnológicos, electrónicos, etc.</p>
+                        <p>Este mapa representa los recorridos que han realizado una serie de usuarios que tienen dispositivos de tracking personal(relojes, pulseras, gafas...) dentro de la Comunidad de Madrid.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <a>Valid XHTML</a> | <a>Images</a> | <a>Virtual Server</a> | by <a>Javier Ariza</a>
+        </div>
+    </body>
+</html>
